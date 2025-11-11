@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Plan de Trabajo - Equipo Sala 9 – Redes e Internet</title>
+    <style>
+        /* (Estilos idénticos a los anteriores para mantener formato) */
+        * {
+            margin: 0; padding: 0; box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #8B1538 0%, #A91D3A 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        h1 {
+            color: #8B1538;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            color: #A91D3A;
+            font-size: 1.2em;
+            font-weight: 300;
+        }
+        .section {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            margin-bottom: 25px;
+        }
+        h2 {
+            color: #8B1538;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #A91D3A;
+            padding-bottom: 10px;
+        }
+        h3 {
+            color: #A91D3A;
+            font-size: 1.4em;
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+            border-left: 3px solid #A91D3A;
+            margin: 20px 0;
+        }
+        .timeline-item {
+            margin-bottom: 30px;
+            position: relative;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -36px;
+            top: 0;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #8B1538;
+            border: 3px solid white;
+        }
+        .date {
+            background: #8B1538;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .task-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .task-list li {
+            padding: 10px;
+            margin: 8px 0;
+            background: #f8f9fa;
+            border-left: 4px solid #A91D3A;
+            border-radius: 5px;
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .team-card {
+            background: linear-gradient(135deg, #8B1538 0%, #A91D3A 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(139, 21, 56, 0.3);
+        }
+        .team-card h4 {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            border-bottom: 2px solid white;
+            padding-bottom: 10px;
+        }
+        .team-card ul {
+            list-style: none;
+        }
+        .team-card li {
+            padding: 8px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        .team-card li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, #8B1538 0%, #A91D3A 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .tips-box {
+            background: #fff5f5;
+            border: 2px solid #A91D3A;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .tips-box h4 {
+            color: #8B1538;
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        @media print {
+            body {
+                background: white;
+            }
+            .section {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📋 Plan de Trabajo - Equipo Sala 9 – Redes e Internet</h1>
+            <p class="subtitle">Distribución de tareas y cronograma para el proyecto “Carrera de Paquetes”</p>
+        </header>
+
+        <div class="section">
+            <h2>👥 Integrantes del Equipo</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <h4>👩 Dana Rubí Vicente Juárez</h4>
+                    <ul>
+                        <li>Responsable de diseño y documentación</li>
+                        <li>Preparación de plantillas, guías y materiales gráficos</li>
+                        <li>Apoyo en etiquetado y montaje físico</li>
+                        <li>Colaboración en programación de la aplicación Flet con Demian</li>
+                    </ul>
+                </div>
+                <div class="team-card">
+                    <h4>👨 Demian Donovan Vicente Valle</h4>
+                    <ul>
+                        <li>Responsable de programación en Scratch y Flet</li>
+                        <li>Implementación de lógica, retos y detección Makey Makey</li>
+                        <li>Pruebas funcionales y ajustes técnicos</li>
+                        <li>Colaboración en programación de la aplicación Flet con Dana</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📅 Cronograma de Trabajo</h2>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="date">📍 13 de Noviembre - Primera Revisión</div>
+                    <h3>Objetivo: MVP funcional inicial</h3>
+                    <ul class="task-list">
+                        <li><strong>Dana:</strong> Plantilla imprimible del tablero y esquema de conexión Makey Makey</li>
+                        <li><strong>Demian:</strong> Proyecto Scratch básico con movimiento de fichas y detección de teclas</li>
+                        <li><strong>Ambos:</strong> Prototipo de botón físico con foto/video y prueba Makey Makey</li>
+                        <li><strong>Ambos:</strong> Programación inicial de la aplicación Flet con el código proporcionado</li>
+                        <li><strong>Presentación:</strong> Demo de movimiento y avance del proyecto</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="date">📍 20 de Noviembre - Segunda Revisión</div>
+                    <h3>Objetivo: Integración de retos y maqueta parcial</h3>
+                    <ul class="task-list">
+                        <li><strong>Dana:</strong> Guía parcial de montaje y lista de materiales</li>
+                        <li><strong>Demian:</strong> Implementación de casillas especiales y lógica avanzada en Scratch</li>
+                        <li><strong>Ambos:</strong> Maqueta parcial con 6 casillas y botones conectados</li>
+                        <li><strong>Ambos:</strong> Avance en programación y pruebas de la aplicación Flet</li>
+                        <li><strong>Presentación:</strong> Demo funcional con retos y maqueta parcial</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="date">📍 27 de Noviembre - Presentación Final</div>
+                    <h3>Objetivo: Proyecto completo y listo para exposición</h3>
+                    <ul class="task-list">
+                        <li><strong>Dana:</strong> Guía completa de montaje, documentación y presentación</li>
+                        <li><strong>Demian:</strong> Proyecto Scratch final con UI completa y demo funcional</li>
+                        <li><strong>Ambos:</strong> Maqueta física terminada, etiquetada y conectada</li>
+                        <li><strong>Ambos:</strong> Programación final y pulido de la aplicación Flet con el código base</li>
+                        <li><strong>Presentación:</strong> Demo final y video demostrativo</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🎯 Estrategias para Evitar Tiempos Muertos</h2>
+
+            <div class="tips-box">
+                <h4>📱 Comunicación</h4>
+                <ul>
+                    <li>Grupo de WhatsApp para actualizaciones diarias</li>
+                    <li>Reuniones virtuales breves cada 3 días</li>
+                    <li>Compartir avances con fotos y videos</li>
+                </ul>
+            </div>
+
+            <div class="tips-box">
+                <h4>📝 Seguimiento de Tareas</h4>
+                <ul>
+                    <li>Checklist compartido en Google Docs o Trello</li>
+                    <li>Actualización diaria de progreso</li>
+                    <li>Alertas antes de fechas de revisión</li>
+                </ul>
+            </div>
+
+            <div class="tips-box">
+                <h4>🔄 Tareas de Respaldo</h4>
+                <ul>
+                    <li>Apoyo mutuo si alguien termina antes</li>
+                    <li>Lista de tareas adicionales disponible</li>
+                    <li>Rotación de responsabilidades</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📋 Distribución de Responsabilidades</h2>
+
+            <h3>Dana Rubí Vicente Juárez (Diseño, Documentación y Programación Flet)</h3>
+            <ul class="task-list">
+                <li>Diseño visual y plantillas imprimibles</li>
+                <li>Guías de montaje y documentación técnica</li>
+                <li>Apoyo en etiquetado y montaje físico</li>
+                <li>Colaboración en programación y pruebas de la aplicación Flet</li>
+            </ul>
+
+            <h3>Demian Donovan Vicente Valle (Programación, Pruebas y Programación Flet)</h3>
+            <ul class="task-list">
+                <li>Desarrollo del proyecto en Scratch</li>
+                <li>Integración con Makey Makey y pruebas funcionales</li>
+                <li>Implementación de retos y lógica de juego</li>
+                <li>Colaboración en programación y pruebas de la aplicación Flet</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>🎮 Integración con Makey Makey</h2>
+
+            <div class="highlight-box">
+                <p><strong>Objetivo:</strong> Control físico interactivo totalmente integrado con la aplicación digital.</p>
+            </div>
+
+            <h3>Componentes del Control Físico</h3>
+            <ul class="task-list">
+                <li>Base de cartón o madera con superficies conductoras</li>
+                <li>Botones conectados a Makey Makey con cables cocodrilo</li>
+                <li>Etiquetado claro de funciones y zonas de contacto</li>
+                <li>Pruebas de sensibilidad y respuesta</li>
+            </ul>
+
+            <h3>Funciones Mapeadas</h3>
+            <ul class="task-list">
+                <li>Botones para mover fichas de jugadores</li>
+                <li>Botón para activar retos y confirmar respuestas</li>
+                <li>Botón para mostrar pistas o ayuda</li>
+                <li>Zona de tierra (GND) para cerrar circuito</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>📈 Plan de Mitigación de Riesgos</h2>
+
+            <div class="tips-box">
+                <h4>Para Dana (tímida e insegura)</h4>
+                <ul>
+                    <li>Dividir tareas en subtareas pequeñas y claras</li>
+                    <li>Check-ins diarios para seguimiento</li>
+                    <li>Apoyo y acompañamiento en tareas complejas</li>
+                </ul>
+            </div>
+
+            <div class="tips-box">
+                <h4>Para Demian (inseguro)</h4>
+                <ul>
+                    <li>Asignar tareas con entregables visibles</li>
+                    <li>Involucrar en decisiones técnicas para aumentar confianza</li>
+                    <li>Reconocimiento de avances y logros</li>
+                </ul>
+            </div>
+
+            <div class="tips-box">
+                <h4>Para el equipo</h4>
+                <ul>
+                    <li>Celebrar pequeños logros</li>
+                    <li>Rotar tareas para mantener motivación</li>
+                    <li>Mantener comunicación abierta y constante</li>
+                    <li>Establecer metas realistas y alcanzables</li>
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+            <p>📋 Plan de trabajo diseñado para maximizar la productividad y éxito del equipo Sala 7</p>
+            <p><strong>¡Cada integrante es clave para lograr un proyecto exitoso!</strong></p>
+        </footer>
+    </div>
+</body>
+</html>
